@@ -1,0 +1,31 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jopemachine/arvis-extension-validator/master/workflow-schema.json",
+  "defaultIcon": "icon.png",
+  "category": "Productivity",
+  "creator": "progfay",
+  "description": "📕 Dictionary of emoji",
+  "name": "arvis-emojisyo-workflow",
+  "version": "0.0.1",
+  "readme": "",
+  "webAddress": "https://github.com/arvis-workflows/arvis-emojisyo-workflow",
+  "enabled": true,
+  "commands": [
+    {
+      "type": "scriptFilter",
+      "command": "emoji",
+      "title": "Search emoji...",
+      "subtitle": "Please enter the emoji's feature you wanna find",
+      "scriptFilter": "node index.js \"{query}\"",
+      "runningSubtext": "Searching...",
+      "withspace": true,
+      "argType": "required",
+      "actions": [
+        {
+          "modifiers": "normal",
+          "type": "clipboard",
+          "text": "{query}"
+        }
+      ]
+    }
+  ]
+}

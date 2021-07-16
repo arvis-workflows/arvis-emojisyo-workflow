@@ -1,0 +1,21 @@
+{
+  "name": "arvis-emojisyo-workflow",
+  "version": "0.0.1",
+  "description": "Dictionary of emoji",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "arvish-init",
+    "preuninstall": "arvish-cleanup",
+    "prepublishOnly": "arvish-prepublish"
+  },
+  "keywords": [
+    "emoji"
+  ],
+  "author": "progfay",
+  "license": "MIT",
+  "dependencies": {
+    "arvish": ">=0.6.1",
+    "emojilib": "^2.4.0"
+  }
+}
